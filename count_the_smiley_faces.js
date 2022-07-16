@@ -16,7 +16,7 @@ const eyesAreValid = (s) => {
     return s === ":" || s === ";";
 }
 
-const monthIsValid = (s) => {
+const mouthIsValid = (s) => {
     return s === ")" || s === "D";
 }
 
@@ -25,16 +25,16 @@ const countSmileys = (arr) => {
     for (let i = 0; i < arr.length; i++) {
         const face = arr[i];
         let eyesValid = false;
-        let monthValid = false;
+        let mouthValid = false;
         for (let j = 0; j < face.length; j++) {
             if (eyesAreValid(face[j])) {
                 eyesValid = true;
             }
-            if (monthIsValid(face[j])) {
-                monthValid = true;
+            if (mouthIsValid(face[j])) {
+                mouthValid = true;
             }
         }
-        if (eyesValid && monthValid) {
+        if (eyesValid && mouthValid) {
             smiley++;
         }
     }
