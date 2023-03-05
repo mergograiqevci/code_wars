@@ -4,31 +4,31 @@ import { kaCokadekaMe } from "./kakaka_cypher"
 
 describe('Kakaka Cypher', () => {
 
-  test('7 is narcissistic', () => {
+  test('a should equal kaa', () => {
     expect(kaCokadekaMe("a")).toEqual("kaa" )
   })
 
-  test('7 is narcissistic', () => {
+  test('z should equal kaz', () => {
     expect(kaCokadekaMe("z")).toEqual("kaz" )    
   })
 
-  test('153 is narcissistic', () => {
+  test('ka should equal kaka', () => {
     expect(kaCokadekaMe("ka")).toEqual("kaka" )     
   })
 
-  test('1634 is narcissistic', () => {
+  test('Abbaa should equal kaAkabbaa', () => {
     expect(kaCokadekaMe("Abbaa")).toEqual("kaAkabbaa" )
   })
 
-  test('1652 is not narcissistic', () => {
+  test('maintenance should equal kamaikantekanakance', () => {
     expect(kaCokadekaMe("maintenance")).toEqual("kamaikantekanakance" )
   })
 
-  test('1652 is not narcissistic', () => {
+  test('Woodie should equal kaWookadie', () => {
      expect(kaCokadekaMe("Woodie")).toEqual("kaWookadie" )
   })
 
-  test('1652 is not narcissistic', () => {
+  test('Incomprehensibilities should equal kaIkancokamprekahekansikabikalikatiekas', () => {
     expect(kaCokadekaMe("Incomprehensibilities")).toEqual("kaIkancokamprekahekansikabikalikatiekas" ) 
   })
 
